@@ -1,0 +1,225 @@
+- id: comments
+  translation: Comentários
+- id: permalinkComment
+  translation: Link para esse comentário
+- id: replyTo
+  translation: Responder
+- id: replyToThread
+  translation: Reply to thread
+- id: noComments
+  translation: Ainda sem comentários
+- id: emailUseGravatarNotifications
+  translation: Your email address is used for <a href="https://gravatar.com" target="_blank" rel="noopener">Gravatar</a> image and notifications about new comments only.
+- id: emailUseGravatar
+  translation: Your email address is used for <a href="https://gravatar.com" target="_blank" rel="noopener">Gravatar</a> image only.
+- id: tellSomething
+  translation: Tell something
+- id: thanksForComment
+  translation: Obrigado
+- id: commentSent
+  translation: Your comment has been sent and will be published after approval
+- id: nickname
+  translation: Nickname
+- id: comment
+  translation: Comentário
+- id: commentPlaceholder
+  translation: Feel free to use Markdown.
+- id: commentNotify
+  translation: Notify me of new comments on this post
+- id: addComment
+  translation: Add comment
+- id: readMore
+  translation: Leia mais
+- id: viewAllPost
+  translation: Ver todas as notícias
+- id: share
+  translation: Compartilhar
+- id: aboutAuthor
+  translation: Sobre o autor
+- id: contact
+  translation: Contato
+- id: authorsPosts
+  translation: Posts do autor
+- id: authorsOfPosts
+  translation: Authors of posts
+- id: authorOfPostsOnBlog
+  translation: Author of posts on the blog
+- id: authorsOfPostsOnBlog
+  translation: Authors of posts on the blog
+- id: blogs
+  translation: Blogs
+
+#about.html
+- id: about-us
+  translation: Sobre
+- id: about-us-2
+  translation: Nós
+- id: about-tecnology-title
+  translation: Tecnologia proprietária
+- id: about-tecnology
+  translation: Possuímos tecnologias proprietárias de Inteligência Artificial (*60 algoritmos patenteados) para automatizar processos, simulando o raciocínio de um ser humano ao analisar documentos e imagens.
+- id: about-bpm-title
+  translation: BPM to BPD
+- id: about-bpm
+  translation: Em 100% dos projetos, a etapa inicial consiste em mapear exaustivamente os processos diretamente ligados à solução para garantirmos que a implantação de nossa Inteligência Artificial atenderá às reais necessidades e gerará retorno sobre o investimento realizado.
+- id: about-impact-title
+  translation: Menor impacto em TI
+- id: about-impact
+  translation: As tecnologias da Futuro Reciclagem possibilitam implantar projetos sem grande impacto ou necessidade de customizações em TI. Desenvolvemos projetos puramente SaaS até projetos com maior complexidade e atendemos desde startups até multinacionais.
+- id: about2-title
+  translation: Um pouco da tecnologia de ponta da Futuro Reciclagem.
+- id: about2-description
+  translation: Automatizamos as decisões que devem ser tomadas na sua empresa.
+- id: about2-ultraocr
+  translation: Ultra OCR®
+- id: about2-ultraocr-description
+  translation: O Ultra OCR®, patenteado pela Futuro Reciclagem, é o sistema de reconhecimento de caracteres, palavras ou termos em imagens ou PDFs. Os sofisticados algoritmos de tratamento de imagem garantem uma eficácia de reconhecimento muito maior que a média de mercado.
+- id: about2-machine
+  translation: Machine Learning & NLP
+- id: about2-machine-description
+  translation: O Machine Learning (ML) e o Natural Language Processing (NLP) são as tecnologias para aprendizado, interpretação e tomada de decisão através de documentos. Quanto maior o número de informações processados, maior é a acuracidade do sistema.
+- id: about2-rpa
+  translation: RPA
+- id: about2-rpa-description
+  translation: RO Robotic Process Automation (RPA) é o componente responsável por automatizar busca e validação de informações, estejam elas em sites, bases de dados ou sistemas internos do negócio. Esse mesmo RPA insere o resultado das análises nos sistemas da empresa.
+- id: about2-Futuro Reciclagem-core
+  translation: Futuro Reciclagem Core
+- id: about2-Futuro Reciclagem-core-description
+  translation: O Futuro Reciclagem Core é uma arquitetura de processamento paralelo em cloud extremamente escalável e elástica. A infraestrutura da Futuro Reciclagem se adapta ao volume de transações que devem ser processados, redimensionando o número de CPUs conforme demanda.
+
+#service.html
+- id: service-title
+  translation: Nossos
+- id: service-title-2
+  translation: Serviços
+- id: service-capture
+  translation: Captura de informações
+- id: service-capture-description
+  translation: Pelo Ultra OCR®, capturamos textos de documentos (de todos os formatos). Pelo RPA, extraímos informações de websites, bases de dados públicas ou de sistemas legado/ERPs.
+- id: service-data
+  translation: Interpretação de dados
+- id: service-data-description
+  translation: Os sistemas de NLP e ML da Futuro Reciclagem interpretam e analisam todos as informações capturadas e reduzem o tempo de análise manual de quaisquer documentos.
+- id: service-integration
+  translation: Integração de sistemas
+- id: service-integration-description
+  translation: Após a análise e estruturação de informações, o RPA ou as interfaces desenvolvidas inserem as informações de interesse em sistemas/ERPs. Todo processo é automatizado.
+
+#clients.html
+- id: clients-title
+  translation: Alguns clientes Futuro Reciclagem
+- id: clients-btn
+  translation: Agende uma visita
+
+#portfolio.html
+- id: title-portfolio
+  translation: Nosso
+- id: title-portfolio-2
+  translation: Portfólio
+- id: portfolio-filter-all
+  translation: Todos
+- id: portfolio-filter-automotive
+  translation: Automotivo
+- id: portfolio-filter-lawsuits
+  translation: Processos Judiciais
+- id: portfolio-filter-personal
+  translation: Documentos Pessoais
+- id: portfolio-filter-health
+  translation: Saúde
+- id: portfolio-filter-tax
+  translation: Gestão Fiscal
+
+#portfolio item
+- id: portfolio-item-1
+  translation: Análise e extração de informações em contratos de financiamento de veículos.
+- id: portfolio-item-2
+  translation: Leitura de placas de veículos capturadas por câmeras / radares.
+- id: portfolio-item-3
+  translation: Obtenção de histórico de veículos através da leitura automática de CRLV.
+- id: portfolio-item-4
+  translation: Análise e extração de informações em processos judiciais.
+- id: portfolio-item-5
+  translation: Análise e interpretação de cláusulas contratuais.
+- id: portfolio-item-6
+  translation: Obtenção de documentos e informações em sites de tribunais.
+- id: portfolio-item-7
+  translation: Análise de informações em documentos pessoais (RG, CNH etc).
+- id: portfolio-item-8
+  translation: Validação de documentos pessoais (RG, CNH etc) em bases oficiais.
+- id: portfolio-item-9
+  translation: Identificação e análise de informações em guias médicas.
+- id: portfolio-item-10
+  translation: Análise de documentos para aprovação de contas médicas.
+- id: portfolio-item-11
+  translation: Leitura de documentos para check-in de pacientes.
+- id: portfolio-item-12
+  translation: Extração de informações em notas fiscais para adicionar em sistemas/ERP.
+- id: portfolio-item-13
+  translation: Análises de informações em notas fiscais para decisões automáticas.
+
+# team.html
+- id: team-title
+  translation: Nosso
+- id: team-title-2
+  translation: Time
+- id: member-flavio-designation
+  translation: CEO Founder
+- id: member-flavio-description
+  translation: Executivo e empreendedor com experiência em Desenvolvimento de negócios, Vendas, Marketing, Marketing Digital, Operações, Tecnologia da informação e Gestão Financeira. Significante experiência internacional, tendo performado cargos executivos de vendas e marketing na América Latina por dois anos.
+- id: member-leonardo-designation
+  translation: CFO
+- id: member-leonardo-description
+  translation: Formado em Engenharia de Produção pela Universidade Federal de Sâo Carlos e com especialização pela Columbia University, com mais de cinco anos no mercado de serviços financeiros e de locação estratégicas de investimentos nacionais e internacionais, desenvolvendo fortes habilidades em venture capital. Desenvolve hoje na Futuro Reciclagem o papel de estrategista de desenvolvimento, gestão de caixa e facilitador de negócios.
+- id: member-antonio-designation
+  translation: CTO
+- id: member-antonio-description
+  translation: Doutor pela USP e King's College, experiência na área de engenharia biomédica, física médica e computação aplicada, com ênfase em Processamento de Imagens. Atualmente atua no desenvolvimento de sistemas inteligentes aplicados ao processamento de documentos/imagens digitais, através de sistema de Machine Learning em geral e da liderança do nosos time de doutores e engenheiros de software.
+- id: member-diego-designation
+  translation: CPO
+- id: member-diego-description
+  translation: Graduado em Engenharia de Produção, durante sua carreira teve diversas experiências em software, desenvolvimento de produtos e também em gestão empresarial. Com formação empreendedora e histórico de sucesso na Transformação Digital, atualmente lidera as áreas de Produto, Operações e Marketing da Futuro Reciclagem.
+- id: member-roberto-designation
+  translation: CXO
+- id: member-roberto-description
+  translation: Executivo com 25 anos de vivência em liderança de equipes comerciais com atuação em soluções de BPO e BPM com foco na eficiência de processos. Experiências em empresas como Iron Mountain, TIVIT, GE Information Services e New Space. Graduado em Engenharia Elétrica pela FEI, com MBA em Marketing pela ESPM.
+- id: member-fernando-designation
+  translation: CSO
+- id: member-fernando-description
+  translation: Executivo sênior com mais de 18 anos de experiência profissional em empresas multinacionais do setor de tecnologia executando as áreas de Vendas, Marketing, Operações e Inovação, com sólida formação técnica em transformação digital e inteligência artificial (PhD no ITA).
+- id: member-gizele-designation
+  translation: CHRO
+- id: member-gizele-description
+  translation: Graduada em Psicologia pela Universidade Federal de Minas Gerais. Mais de 7 anos de experiência na área de Recursos Humanos. Experiência com estruturação de todos os subsistemas da área de Pessoas e consolidação de uma cultura forte. Atua na formalização e concretização da cultura Futuro Reciclagem e administrando nosso excepcional time.
+
+#blog.html
+- id: blog-title
+  translation: Notícias
+- id: blog-more
+  translation: Ler mais
+- id: blog-all
+  translation: Ver todas as notícias
+
+#contact.html
+
+- id: contact-title
+  translation: Fale
+- id: contact-title-2
+  translation: Conosco
+- id: contact-address-title
+  translation: Nossos endereços
+- id: contact-name
+  translation: Seu Nome
+- id: contact-email
+  translation: Seu E-mail
+- id: contact-phone
+  translation: Seu Telefone
+- id: contact-subject
+  translation: Assunto
+- id: contact-message
+  translation: Mensagem
+- id: contact-send
+  translation: Enviar
+- id: contact-success
+  translation: Obrigado! O email enviado com sucesso :)
+- id: contact-fail
+  translation: Desculpe, não sei o que aconteceu. Tente novamente :(

@@ -1,0 +1,25 @@
+enable : true
+
+bgImage : images/backgrounds/bg_preto_menor.webp
+
+homeItem :
+  - name : Ultra OCR®
+    image : 
+    date : 
+    content : E se você tiver que extrair muita informação de imagens ou PDFs difíceis de ler? Use o nosso Ultra OCR® e não contrate dezenas de pessoas para executar essas tarefas.
+    btnURL : "#infotech"
+    btnText : O que é Ultra OCR®?
+    
+  - name : Machine Learning
+    image : 
+    date : 
+    content : Usando seus dados para resolver seus problemas.
+    btnURL : "#infotech"
+    btnText : O que é Machine Learning?
+    
+  - name : Robotic Process Automation
+    image : 
+    date : 
+    content : Esqueça as tarefas repetitivas. Esqueça os erros de digitação. Deixe que nossos robôs concluam toda a tarefa pesada para sua empresa.
+    btnURL : "#infotech"
+    btnText : Conte Mais

@@ -1,0 +1,19 @@
+enable: true
+heading: Sobre
+headingSpan: Nós
+aboutItem:
+  - icon: tf-focus
+
+    image: images/about/Tecnologiaproprietaria.png
+    title: Tecnologia proprietária
+    content: Possuímos tecnologias proprietárias de Inteligência Artificial (*60 algoritmos patenteados) para automatizar processos, simulando o raciocínio de um ser humano ao analisar documentos e imagens.
+
+  - icon: tf-strategy
+    image: images/about/BPMtoBPD.png
+    title: BPM to BPD
+    content: Em 100% dos projetos, a etapa inicial consiste em mapear exaustivamente os processos diretamente ligados à solução para garantirmos que a implantação de nossa Inteligência Artificial atenderá às reais necessidades e gerará retorno sobre o investimento realizado.
+
+  - icon: tf-anchor2
+    image: images/about/MenorimpactoemTI.png
+    title: Menor impacto em TI
+    content: As tecnologias da Futuro Reciclagem possibilitam implantar projetos sem grande impacto ou necessidade de customizações em TI. Desenvolvemos projetos puramente SaaS até projetos com maior complexidade e atendemos desde startups até multinacionais.

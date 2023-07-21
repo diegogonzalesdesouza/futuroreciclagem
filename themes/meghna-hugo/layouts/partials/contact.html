@@ -1,0 +1,124 @@
+{{ if .Site.Data.contact.enable }}
+{{"<!-- Start Contact Us -->" | safeHTML}}
+<section id="contact-us" class="contact-us section-bg">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                {{"<!-- section title -->" | safeHTML}}
+                <div class="title text-center wow fadeIn" data-wow-duration="500ms">
+                    <h2>{{ i18n "contact-title" }} <span
+                            class="color">{{ i18n "contact-title-2" }}</span></h2>
+                    <div class="border-meghna"></div>
+                </div>
+            </div>
+            {{"<!-- /section title -->" | safeHTML}}
+
+            {{"<!-- Contact Details -->" | safeHTML}}
+            <div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+                <h3>{{ i18n "contact-address-title" }}</h3>
+                {{ with .Site.Data.contact.content }} <p> {{ . }} </p> {{ end }}
+                <div class="contact-details">
+                    {{ range .Site.Data.contact.contactDetails }}
+                    <div class="con-info clearfix">
+                        <i class="{{ .icon }}"></i>
+                        {{ if .url }}
+                            <a href="{{ .url }}" target="_blank">{{ .info }}</a>
+                        {{ else }}
+                            <span>{{ .info }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            {{"<!-- Contact Form -->" | safeHTML}}
+            <div class="col-lg-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+                <form class="form-meghna" target="_self" enctype="multipart/form-data" action="https://formkeep.com/f/b4d05dedf3a4" accept-charset="UTF-8" method="post">
+                    <input name="utf8" type="hidden" value="✓">
+                    <div class="form-group">
+                        <input type="text" placeholder="{{ i18n "contact-name" }}" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="{{ i18n "contact-email" }}" class="form-control" name="_replyto" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder=" {{ i18n "contact-phone" }}" class="form-control" name="phone" id="phone" required title="Formato: (22) 55555-4444" minlength="15" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="{{ i18n "contact-subject" }}" class="form-control" name="subject" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="{{ i18n "contact-message" }}" class="form-control" name="message"
+                            id="message"></textarea>
+                    </div>
+                    <input type="hidden" name="_language" value="pt-BR" />
+                    <input type="hidden" name="_subject" value="Mensagem do site futuroreciclagem.com.br" />
+                    <div id="mail-success" class="success">
+                        {{ i18n "contact-success" }}
+                    </div>
+                    <div id="mail-fail" class="error">
+                        {{ i18n "contact-fail" }}
+                    </div>
+                    <div id="cf-submit">
+                        <input type="submit" class="btn btn-transparent" value="{{ i18n "contact-send" }}">
+                    </div>
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response" value="03AOLTBLQk0EjliQg2aHWQsm_WbmGclo9R7X5a0DehByEGstMADXBGh0PVlEMUP1rmeaGjKvYs-YC5yOE4FbAgpo9FWphFwvOh378gS1x_BG3NvbE2MSM7oGIX7ko4SVUZBmkbgGcVxRUZn5IGXckvO_yG_BNBPPvnhS1btuZJEQyhHxaMha4MA1YTTkjxWVDrucUi7vfZ0kzxHIZFou4bvY-n7Z_B-wBByZ-asf7Doxsnio3a8jflIQ4VNsT1ujvyi2fTtt12O_-nUEgTVeBAjhtEwlpJXbMQzw7v1hBjCxGLdXcke6bdyPoDY05gWqIye72YLTPTTA-rHB2yeO6ebudJ8lNUBg_335rhq9AakuCh4d_mTADT5ZpFlGwTIobxVGon7l5JG4pelZ4MOJfHyOJNzwhygXCVME9HbTT2KS5MtUU6YswLRF4tVo3AXIBTZsv0a1WqZmDwCXie-op6ZZZTnXztUOq9_QPPAYTJQWfYolFBXNQ80T0">
+                </form>
+              
+                <script type="text/javascript">
+                    function mask(o, f) {
+                      setTimeout(function () {
+                          var v = mphone(o.value);
+                          if (v != o.value) {
+                              o.value = v;
+                          }
+                      }, 1);
+                    }
+                    function mphone(v) {
+                      var r = v.replace(/\D/g,"");
+                      r = r.replace(/^0/,"");
+                      if (r.length > 10) {
+                          // 11+ digits. Format as 5+4.
+                          r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/,"($1) $2-$3");
+                      }
+                      else if (r.length > 5) {
+                          // 6..10 digits. Format as 4+4
+                          r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/,"($1) $2-$3");
+                      }
+                      else if (r.length > 2) {
+                          // 3..5 digits. Add (0XX..)
+                          r = r.replace(/^(\d\d)(\d{0,5})/,"($1) $2");
+                      }
+                      else {
+                          // 0..2 digits. Just add (0XX
+                          r = r.replace(/^(\d*)/, "($1");
+                      }
+                      return r;
+                    }
+                  
+                    var searchParams = window.location.hash.substr(1);
+                    if(searchParams.includes('success')) {
+                        var div = document.createElement('div');
+                        div.id = 'success';
+                        div.className = 'clients-button btn btn-main'; 
+                        div.style.cssText = 'position: absolute; z-index: 999; width: 50%; top:70px; margin: 0 auto; left: 0; right: 0; border: 2px solid #ccc';
+                        div.innerHTML = 'Contato enviado com sucesso!';
+                        document.body.appendChild(div);
+
+                        setTimeout(function() {
+                            div.remove();
+                        }, 5000);
+                    }
+
+                  </script>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="mapDiv" style="width: auto; height: 300px; "></div> -->
+
+    <!-- {{"Open Map" | safeHTML}} -->
+		<!-- <script defer type="text/javascript" src="{{ "plugins/open-map/map-script.js" | absURL}}"></script> -->
+
+</section>
+{{"<!-- /contact -->" | safeHTML}}
+{{ end }}

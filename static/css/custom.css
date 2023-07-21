@@ -1,0 +1,148 @@
+.col-lg-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+.member-boxsize {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+.navbar-brand{
+    color: #1d2024;
+}
+
+.caption-portfolio{
+    color: #212121;
+}
+
+.title-portfolio{
+    color: #212121;
+}
+.title-portfolio:hover{
+    color: #212121;
+
+}
+.portfolio-content{
+    padding: 20% 10%;
+    background-color: rgb(252, 252, 252);
+    height: 230px;
+    /* border-left: 1px solid rgba(236, 239, 241, 0.07);
+    border-top: 1px solid rgba(236, 239, 241, 0.07); */
+    margin-bottom: 40px;
+    /* margin-left: 1px; */
+    box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+  }
+.text-portfolio{
+    color: #212121;
+    font-weight: 900;
+    text-align:center;
+    display: flex;
+    align-items: center;
+}
+
+
+/*Logo over */
+
+@media (min-width: 1370px){
+    #logo {
+        left: 22%;
+        top: 2%;
+    } 
+}
+@media (max-width: 1370px){
+    #logo {
+        left: 10%;
+        top: 2%;
+    } 
+}
+@media (max-width: 600px){
+    #logo {
+        left: 10%;
+        top: 8px;
+    } 
+}
+
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 100vw;
+  position: absolute;
+  z-index: 1000;
+}
+
+/*Sobre nós icons*/
+
+.icon-photo {
+    /* overflow: hidden; */
+    position: relative;
+    width: 72px;
+    height: 72px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.0;
+    opacity: 0.6;
+
+  }
+  
+  @media (max-width: 768px) {
+    .icon-photo {
+      text-align: center;
+    }
+  }
+  
+  
+  .icon-photo img {
+    transition: all 0.4s ease 0s;
+  }
+  
+  @media (max-width: 768px) {
+    .icon-photo img {
+      display: inline-block;
+    }
+  }
+  
+  .icon-photo .mask {
+    background-color: rgba(87, 203, 204, 0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transition: all .5s ease-out 0s;
+    -webkit-transform: rotateY(180deg) scale(0.5, 0.5);
+    transform: rotateY(180deg) scale(0.5, 0.5);
+  }
+  
+  .icon-photo .mask ul {
+    text-align: center;
+    position: relative;
+    top: 125px;
+  }
+  
+  .icon-photo .mask ul li a {
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+  }
+  
+  /* .icon-photo .mask ul li a:hover {
+    background-color: #fff;
+    color: #3398bb;
+    border: 1px solid transparent;
+   } */

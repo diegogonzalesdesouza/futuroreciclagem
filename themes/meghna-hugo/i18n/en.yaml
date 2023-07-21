@@ -1,0 +1,225 @@
+- id: comments
+  translation: Comments
+- id: permalinkComment
+  translation: Permalink to this comment
+- id: replyTo
+  translation: Reply to
+- id: replyToThread
+  translation: Reply to thread
+- id: noComments
+  translation: No comments yet. Your comment may be the first.
+- id: emailUseGravatarNotifications
+  translation: Your email address is used for <a href="https://gravatar.com" target="_blank" rel="noopener">Gravatar</a> image and notifications about new comments only.
+- id: emailUseGravatar
+  translation: Your email address is used for <a href="https://gravatar.com" target="_blank" rel="noopener">Gravatar</a> image only.
+- id: tellSomething
+  translation: Tell something
+- id: thanksForComment
+  translation: Thank you
+- id: commentSent
+  translation: Your comment has been sent and will be published after approval
+- id: nickname
+  translation: Nickname
+- id: comment
+  translation: Comment
+- id: commentPlaceholder
+  translation: Feel free to use Markdown.
+- id: commentNotify
+  translation: Notify me of new comments on this post
+- id: addComment
+  translation: Add comment
+- id: readMore
+  translation: Read more
+- id: viewAllPost
+  translation: View All Post
+- id: share
+  translation: Share
+- id: aboutAuthor
+  translation: About author
+- id: contact
+  translation: Contact
+- id: authorsPosts
+  translation: Author's posts
+- id: authorsOfPosts
+  translation: Authors of posts
+- id: authorOfPostsOnBlog
+  translation: Author of posts on the blog
+- id: authorsOfPostsOnBlog
+  translation: Authors of posts on the blog
+- id: blogs
+  translation: Blogs
+
+#abouthtml
+- id: about-us
+  translation: About
+- id: about-us-2
+  translation: Us
+- id: about-tecnology-title
+  translation: Proprietary Technology
+- id: about-tecnology
+  translation: We have proprietary Artificial Intelligence technologies (* 60 patented algorithms) to automate processes, simulating the reasoning of a human being when analyzing documents and images.
+- id: about-bpm-title
+  translation: BPM to BPD
+- id: about-bpm
+  translation: In 100% of the projects, the initial step consists of exhaustively mapping the processes directly linked to the solution to ensure that the implementation of our Artificial Intelligence will meet the real needs and generate return on the investment made.
+- id: about-impact-title
+  translation: Lower IT impact
+- id: about-impact
+  translation: futuro-reciclagem's technologies make it possible to implement projects without major impact or the need for IT customizations. We develop purely SaaS projects up to more complex projects and we serve from startups to multinationals.
+- id: about2-title
+  translation: About futuro-reciclagem's cutting edge technology.
+- id: about2-description
+  translation: We automate the decisions that must be made in your company.
+- id: about2-ultraocr
+  translation: Ultra OCR®
+- id: about2-ultraocr-description
+  translation: Ultra OCR®, patented by futuro-reciclagem, is the system for recognizing characters, words or terms in images or PDFs. Sophisticated image processing algorithms guarantee recognition efficiency much higher than the market average.
+- id: about2-machine
+  translation: Machine Learning & NLP
+- id: about2-machine-description
+  translation: Machine Learning (ML) and Natural Language Processing (NLP) are the technologies for learning, interpreting and making decisions through documents. The greater the number of information processed, the greater the accuracy of the system.
+- id: about2-rpa
+  translation: RPA
+- id: about2-rpa-description
+  translation: Robotic Process Automation (RPA) is the component responsible for automating information search and validation, whether on websites, databases or internal business systems. This same RPA inserts the results of the analyzes into the company's systems.
+- id: about2-futuro-reciclagem-core
+  translation: futuro-reciclagem Core
+- id: about2-futuro-reciclagem-core-description
+  translation: futuro-reciclagem Core is an extremely scalable and elastic parallel cloud processing architecture. futuro-reciclagem's infrastructure adapts to the volume of transactions that must be processed, resizing the number of CPUs as required.
+
+#service.html
+- id: service-title
+  translation: Our
+- id: service-title-2
+  translation: Services
+- id: service-capture
+  translation: Information Capture
+- id: service-capture-description
+  translation: Through Ultra OCR®, we capture text from documents (of all formats). Through RPA, we extract information from websites, public databases or from legacy systems/ERPs.
+- id: service-data
+  translation: Data Interpretation
+- id: service-data-description
+  translation: futuro-reciclagem's NLP and ML systems interpret and analyze all captured information and reduce the time for manual analysis of any documents.
+- id: service-integration
+  translation: System integration
+- id: service-integration-description
+  translation: After analyzing and structuring information, the RPA or the developed interfaces insert the information of interest in systems / ERPs. The entire process is automated.
+
+#clients.html
+- id: clients-title
+  translation: Some of our customers
+- id: clients-btn
+  translation: SCHEDULE A VISIT
+
+#portfolio
+- id: title-portfolio
+  translation: Our
+- id: title-portfolio-2
+  translation: Portfolio
+- id: portfolio-filter-all
+  translation: All
+- id: portfolio-filter-automotive
+  translation: Automotive
+- id: portfolio-filter-lawsuits
+  translation: Court Lawsuits
+- id: portfolio-filter-personal
+  translation: Personal Documents
+- id: portfolio-filter-health
+  translation: Health
+- id: portfolio-filter-tax
+  translation: Tax Management
+
+#portfolio item
+- id: portfolio-item-1
+  translation: Analysis and extraction of information in vehicle financing contracts.
+- id: portfolio-item-2
+  translation: Reading license plates captured by cameras / radars.
+- id: portfolio-item-3
+  translation: Obtaining vehicle history through automatic CRLV reading (vehicle licensing document)
+- id: portfolio-item-4
+  translation: Analysis and extraction of information in legal proceedings.
+- id: portfolio-item-5
+  translation: Analysis and interpretation of contractual clauses.
+- id: portfolio-item-6
+  translation: Obtaining documents and information on court websites.
+- id: portfolio-item-7
+  translation: Analysis of information in personal documents (RG, CNH, etc.).
+- id: portfolio-item-8
+  translation: Validation of personal documents (RG, CNH, etc.) on official bases.
+- id: portfolio-item-9
+  translation: Identification and analysis of information in medical guides.
+- id: portfolio-item-10
+  translation: Analysis of documents for approval of medical bills.
+- id: portfolio-item-11
+  translation: Reading documents for patient check-in.
+- id: portfolio-item-12
+  translation: Extraction of information in invoices to add in systems / ERP.
+- id: portfolio-item-13
+  translation: Analysis of information in invoices for automatic decisions.
+
+# team.html
+- id: team-title
+  translation: Our
+- id: team-title-2
+  translation: Team
+- id: member-flavio-designation
+  translation: CEO/Founder
+- id: member-flavio-description
+  translation: Executive and entrepreneur with experience in Business Development, Sales, Marketing, Digital Marketing, Operations, Information Technology and Financial Management. Significant international experience, having performed executive sales and marketing positions in Latin America for two years.
+- id: member-leonardo-designation
+  translation: CFO
+- id: member-leonardo-description
+  translation: Graduated in Production Engineering from the Federal University of São Carlos and with a specialization from Columbia University, with more than five years in the financial services market and strategic leasing of national and international investments, developing strong skills in venture capital. He now plays the role of development strategist, cash management and business facilitator at futuro-reciclagem.
+- id: member-antonio-designation
+  translation: CTO
+- id: member-antonio-description
+  translation: Post Doctorate from USP and King's College, experience in the field of biomedical engineering, medical physics and applied computing, with an emphasis on Image Processing. Currently works in the development of intelligent systems applied to the processing of digital documents / images, through a Machine Learning system in general and the leadership of our team of doctors and software engineers.
+- id: member-diego-designation
+  translation: CPO
+- id: member-diego-description
+  translation: Graduated in Production Engineering, during his career had several experiences in software and product development, and also in business management. With an entrepreneurial background and a history of success in Digital Transformation, currently leads futuro-reciclagem's Product, Operations and Marketing areas.
+- id: member-roberto-designation
+  translation: CXO
+- id: member-roberto-description
+  translation: Executive with 25 years of experience in leading commercial teams working in BPO and BPM solutions with a focus on process efficiency. Experiences in companies like Iron Mountain, TIVIT, GE Information Services and New Space. Graduated in Electrical Engineering from FEI, with an MBA in Marketing from ESPM.
+- id: member-fernando-designation
+  translation: CSO
+- id: member-fernando-description
+  translation: Senior executive with over 18 years of professional experience in multinational companies in the technology industry running sales, marketing, operations and innovation areas, and with strong technical background in digital transformation and artificial intelligence (PhD at ITA).
+- id: member-gizele-designation
+  translation: CHRO
+- id: member-gizele-description
+  translation: Graduated in Psychology at the Federal University of Minas Gerais. More than 7 years of experience in the Human Resources area. Experience with structuring all subsystems in the People area and consolidating a strong culture. It acts in the formalization and concretization of the futuro-reciclagem culture and managing our exceptional team.
+
+#blog.html
+- id: blog-title
+  translation: News
+- id: blog-more
+  translation: Read more
+- id: blog-all
+  translation: All News
+
+#contact.html
+
+- id: contact-title
+  translation: Contact
+- id: contact-title-2
+  translation: Us
+- id: contact-address-title
+  translation: Our addresses
+- id: contact-name
+  translation: Full Name
+- id: contact-email
+  translation: Email
+- id: contact-phone
+  translation: Phone Number
+- id: contact-subject
+  translation: Subject
+- id: contact-message
+  translation: Message
+- id: contact-send
+  translation: Send
+- id: contact-success
+  translation: Thank You! Email sent :)
+- id: contact-fail
+  translation: Sorry, I don't know what happened. Try again, or send a e-mail to comercial@futuroreciclagem.com.br :(

@@ -1,0 +1,15 @@
+{{ if .Site.Params.banner.enable }}
+{{"<!-- Welcome Slider-->" | safeHTML}}
+<section class="hero-area" style='background: #113F53;'>
+    <div class="block p-5">
+        {{with .Site.Params.banner.icon}}
+        <!-- <div class="video-button">
+            <i class="{{ . }}"></i>
+        </div> -->
+        {{ end }}
+       {{with .Site.Params.banner.heading}} <h1 class="mt-5 p-3">{{ . }}</h1>{{ end }}
+       {{with .Site.Params.banner.content}} <h4 class="my-5">{{ . }}</h4> {{ end }}
+    </div>
+</section>
+{{"<!-- /Welcome Slider-->" | safeHTML}}
+{{end}}

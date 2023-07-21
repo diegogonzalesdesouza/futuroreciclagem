@@ -1,0 +1,217 @@
+baseURL = "https://www."
+languageCode = "pt-br"
+DefaultContentLanguage = "en"
+title = "Futuro"
+theme = "meghna-hugo"
+summaryLength = 10
+
+[taxonomies]
+  author = "author"
+  category = "categories"
+  tag = "tags"
+
+# defaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "Futuro Reciclagem"
+    languageName = "English"
+    weight = 1
+    #Menu
+    [languages.en.menu]
+        [[languages.en.menu.nav]]
+        name = "Futuro"
+        URL = "#about"
+        weight = 2
+
+        [[languages.en.menu.nav]]
+        name = "Services"
+        URL = "#servicos"
+        weight = 3
+
+        [[languages.en.menu.nav]]
+        name = "Portfolio"
+        URL = "#portfolio"
+        weight = 4
+
+        [[languages.en.menu.nav]]
+        name = "Team"
+        URL = "#equipe"
+        weight = 5
+
+        [[languages.en.menu.nav]]
+        name = "Product"
+        url = "http://ultraocr.com.br/"
+        weight = 6
+
+        [[languages.en.menu.nav]]
+        name = "News"
+        URL = "#noticias"
+        weight = 7
+
+        [[languages.en.menu.nav]]
+        name = "Contact"
+        URL = "#contact-us"
+        weight = 8
+    
+    # Site params
+    [languages.en.params]
+    home= "Home"
+    logo = "images/logo.png"
+    gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+    # Meta data
+    description = "Inteligência artificial ao seu alcance"
+    author = "Themefisher"
+    # Google Analitycs
+    googleAnalitycsID = "Your ID"
+    custom_css = ["css/custom.css"]
+
+        # Banner Section
+        [languages.en.params.banner]
+        enable = true
+        bgImage = "images/slider/hero-area.jpg"
+        icon = "tf-ion-play"
+        heading = "Em breve um novo site para você"
+        content= "Estamos desenvolvendo uma nova página que refletirá nosso propósito."
+        btn = true
+        btnText="Explore Us"
+        btnURL="#servicos"
+
+        # call to action
+        [languages.en.params.cta]
+        enable = true
+        title = "Entenda tudo o que a Futuro pode fazer por sua empresa."
+        content = "Fale com nossos consultores."
+        btnURL = "#contact-us"
+        btnText = "Agende uma visita"
+
+        # counter
+        [languages.en.params.counter]
+        enable = true
+        bgImage = "images/backgrounds/bg_branco_3.webp"
+            [[languages.en.params.counter.counterItem]]
+            title = "Happy Clients"
+            icon = "tf-ion-android-happy"
+            count = "320"
+
+            [[languages.en.params.counter.counterItem]]
+            title = "Projects completed"
+            icon = "tf-ion-archive"
+            count = "565"
+
+            [[languages.en.params.counter.counterItem]]
+            title = "Positive feedback"
+            icon = "tf-ion-thumbsup"
+            count = "95"
+
+            [[languages.en.params.counter.counterItem]]
+            title = "Cups of Coffee"
+            icon = "tf-ion-coffee"
+            count = "2500"
+
+        # footer
+        [languages.en.params.footer]
+            copyright = "Themefisher Team"
+            copyrightURL = "http://www.themefisher.com"
+    
+  [languages.pt]
+    title = "Futuro"
+    languageName = "Português"
+    weight = 2
+    # Menu
+    [languages.pt.menu]
+        [[languages.pt.menu.nav]]
+        name = "Futuro"
+        URL = "#about"
+        weight = 2
+
+        [[languages.pt.menu.nav]]
+        name = "Serviços"
+        URL = "#servicos"
+        weight = 3
+
+        [[languages.pt.menu.nav]]
+        name = "Portfólio"
+        URL = "#portfolio"
+        weight = 4
+
+        [[languages.pt.menu.nav]]
+        name = "Equipe"
+        URL = "#equipe"
+        weight = 5
+
+        [[languages.pt.menu.nav]]
+        name = "Produto"
+        url = "http://ultraocr.com.br/"
+        weight = 6
+
+        [[languages.pt.menu.nav]]
+        name = "Notícias"
+        URL = "#noticias"
+        weight = 7
+
+        [[languages.pt.menu.nav]]
+        name = "Contato"
+        URL = "#contact-us"
+        weight = 8
+
+    # Site params
+    [languages.pt.params]
+    home= "Home"
+    logo = "images/logo.png"
+    gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+    # Meta data
+    description = "Inteligência artificial ao seu alcance"
+    author = "Themefisher"
+    # Google Analitycs
+    googleAnalitycsID = "Your ID"
+    custom_css = ["css/custom.css"]
+
+        # Banner Section
+        [languages.pt.params.banner]
+        enable = true
+        bgImage = "images/slider/hero-area.jpg"
+        icon = "tf-ion-play"
+        heading = "Digital Transformation through AI"
+        content= "Deploying state of the art technologies to solve real world problems"
+        btn = true
+        btnText="Entenda melhor"
+        btnURL="#servicos"
+
+        # call to action
+        [languages.pt.params.cta]
+        enable = true
+        title = "Entenda tudo o que a Futuro pode fazer por sua empresa."
+        content = "Fale com nossos consultores."
+        btnURL = "#contact-us"
+        btnText = "Agende uma visita"
+
+        # counter
+        [languages.pt.params.counter]
+        enable = true
+        bgImage = "images/backgrounds/bg_branco_3.webp"
+            [[languages.pt.params.counter.counterItem]]
+            title = "Happy Clients"
+            icon = "tf-ion-android-happy"
+            count = "320"
+
+            [[languages.pt.params.counter.counterItem]]
+            title = "Projects completed"
+            icon = "tf-ion-archive"
+            count = "565"
+
+            [[languages.pt.params.counter.counterItem]]
+            title = "Positive feedback"
+            icon = "tf-ion-thumbsup"
+            count = "95"
+
+            [[languages.pt.params.counter.counterItem]]
+            title = "Cups of Coffee"
+            icon = "tf-ion-coffee"
+            count = "2500"
+
+        # footer
+        [languages.pt.params.footer]
+            copyright = "Themefisher Team"
+            copyrightURL = "http://www.themefisher.com"
+

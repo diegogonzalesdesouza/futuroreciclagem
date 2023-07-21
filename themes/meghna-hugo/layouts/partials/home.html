@@ -1,0 +1,37 @@
+{{ if .Site.Data.home.enable }}
+{{"<!-- Start Home -->" | safeHTML}}
+<section id="home" class="hero-area"
+    style='background: url("{{ .Site.Data.home.bgImage | absURL }}");    background-position: center center;'>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                {{"<!-- home wrapper -->" | safeHTML}}
+                <div id="testimonials" class="wow fadeInUp" data-wow-duration="500ms" data-wow-delay="100ms">
+                    {{ range .Site.Data.home.homeItem }}
+                    {{"<!-- home single -->" | safeHTML}}
+                    <div class="item text-center">
+
+                        {{"<!-- client photo -->" | safeHTML}}
+                        <!--  <div class="client-thumb">
+                            <img src="{{ .image | absURL }}" class="img-fluid" alt="Futuro Reciclagem">
+                        </div> -->
+
+                        {{"<!-- client info -->" | safeHTML}}
+                        <div class="block">
+
+                            <h1>{{ .name }}</h1>
+                            <span>{{ .date }}</span>
+                            <p id="client-content">{{ .content }}</p>
+                            <a data-scroll href="{{ .btnURL }}" class="btn btn-transparent">{{ .btnText }}</a>
+
+                        </div>
+                    </div>
+                    {{"<!-- /home single -->" | safeHTML}}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{"<!-- /home -->" | safeHTML}}
+{{ end }}

@@ -1,0 +1,136 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Parameters:
+  Environment:
+    Type: String
+    AllowedValues:
+      - STAGING
+      - PRODUCTION
+
+Mappings:
+  Environment:
+    STAGING:
+      Domain: 
+    PRODUCTION:
+      Domain: 
+
+Resources:
+  Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
+        BlockPublicPolicy: True
+        IgnorePublicAcls: True
+        RestrictPublicBuckets: True
+      VersioningConfiguration:
+        Status: Enabled
+
+  OriginAccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: !Ref AWS::StackName
+
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref Bucket
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action: s3:GetObject
+            Resource: !Sub arn:${AWS::Partition}:s3:::${Bucket}/*
+            Principal:
+              AWS: !Sub arn:${AWS::Partition}:iam::cloudfront:user/CloudFront Origin Access Identity ${OriginAccessIdentity}
+
+  # aws logs put-resource-policy --policy-name Route53 --policy-document "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Principal\":{\"Service\":\"route53.amazonaws.com\"},\"Action\":[\"logs:CreateLogStream\",\"logs:PutLogEvents\"],\"Resource\":[\"arn:aws:logs:us-east-1:948469138520:log-group:/aws/route53/*\",\"arn:aws:logs:us-east-1:948469138520:log-group:/aws/route53/*:log-stream:*\"]}]}"
+  DnsQueryLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName:
+        Fn::Join:
+          - /
+          - - /aws
+            -  route53
+            - !FindInMap [Environment, !Ref Environment, Domain] 
+      RetentionInDays: 180
+
+  HostedZone:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      HostedZoneConfig:
+        Comment: !Ref AWS::StackName
+      Name: !FindInMap [Environment, !Ref Environment, Domain]
+      QueryLoggingConfig:
+        CloudWatchLogsLogGroupArn: !GetAtt DnsQueryLogGroup.Arn
+
+  Certificate:
+    Type: AWS::CertificateManager::Certificate
+    Properties:
+      DomainName: !FindInMap [Environment, !Ref Environment, Domain]
+      DomainValidationOptions:
+        - DomainName: !FindInMap [Environment, !Ref Environment, Domain]
+          HostedZoneId: !Ref HostedZone
+      ValidationMethod: DNS
+
+  Record:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneId: !Ref HostedZone
+      RecordSets:
+        - Name: !FindInMap [Environment, !Ref Environment, Domain]
+          AliasTarget:
+            DNSName: !GetAtt CloudFront.DomainName
+            HostedZoneId: Z2FDTNDATAQYW2 # fixed for CloudFront
+          Type: A
+        - Name: !FindInMap [Environment, !Ref Environment, Domain]
+          AliasTarget:
+            DNSName: !GetAtt CloudFront.DomainName
+            HostedZoneId: Z2FDTNDATAQYW2 # fixed for CloudFront
+          Type: AAAA
+
+  CloudFront:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        Aliases:
+          - !FindInMap [Environment, !Ref Environment, Domain]
+        Comment: !Ref AWS::StackName
+        DefaultCacheBehavior:
+          Compress: True
+          DefaultTTL: 300
+          MaxTTL: 86400
+          ForwardedValues:
+            QueryString: False
+          TargetOriginId: !Ref Bucket
+          ViewerProtocolPolicy: redirect-to-https
+        DefaultRootObject: index.html
+        Enabled: True
+        HttpVersion: http2
+        IPV6Enabled: True
+        Origins:
+          - Id: !Ref Bucket
+            DomainName: !GetAtt Bucket.DomainName
+            S3OriginConfig:
+              OriginAccessIdentity: !Sub origin-access-identity/cloudfront/${OriginAccessIdentity}
+        PriceClass: PriceClass_All
+        ViewerCertificate:
+          AcmCertificateArn: !Ref Certificate
+          MinimumProtocolVersion: TLSv1.2_2018
+          SslSupportMethod: sni-only
+
+  # Output parameters
+
+  BucketName:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: !Sub /${AWS::StackName}/bucket
+      Type: String
+      Value: !Ref Bucket
+
+# Outputs:

@@ -1,0 +1,23 @@
+enable : true
+heading : Fale
+headingSpan : Conosco
+title : Nossos endereços
+content : 
+enable_maps : false
+mapLatitude : -23.554117
+mapLongitude: -46.662224
+contactDetails :
+  - icon : tf-map-pin
+    info : "R. Carapiranga, 263 - Vila Caraguatá, São Paulo - SP"
+    url : ""
+
+  - icon : tf-ion-ios-telephone-outline
+    # info : "Tel. +55 (11) 4780-9328"
+    
+  - icon : tf-ion-ios-email-outline
+    info : "Email: comercial@futuroreciclagem.com.br"
+    
+  # - icon : tf-map-pin
+  #   info : "R. José Bernardino, 97 - Vila Cabral, Campina Grande - PB, 58408-027"
+  #   url : "https://g.page/NuveoPB?share"
+  

@@ -1,0 +1,16 @@
+enable : true
+heading : Nossos
+headingSpan : Serviços
+serviceItem :
+  - icon : tf-search3
+    title : Captura de informações
+    content : Pelo Ultra OCR®, capturamos textos de documentos (de todos os formatos). Pelo RPA, extraímos informações de websites, bases de dados públicas ou de sistemas legado/ERPs.
+
+  - icon : tf-lightbulb
+    title : Interpretação de dados
+    content : Os sistemas de NLP e ML da Futuro Reciclagem interpretam e analisam todos as informações capturadas e reduzem o tempo de análise manual de quaisquer documentos. 
+
+    
+  - icon : tf-laptop
+    title : Integração de sistemas
+    content : Após a análise e estruturação de informações, o RPA ou as interfaces desenvolvidas inserem as informações de interesse em sistemas/ERPs. Todo processo é automatizado.

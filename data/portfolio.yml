@@ -1,0 +1,113 @@
+enable : true
+heading : Nosso
+headingSpan : Portfólio
+filterList :
+  - filterType : automotivo
+    filterTitle : Automotivo
+    
+  - filterType : processos-judiciais
+    filterTitle : Processos Judiciais
+
+  - filterType : documentos-pessoais
+    filterTitle : Documentos Pessoais
+
+  - filterType : saude
+    filterTitle : Saúde
+
+  - filterType : gestao-fiscal
+    filterTitle : Gestão Fiscal
+
+portfolioItem :
+  - types : automotivo
+    image : images/icons/70.png
+    icon : tf-ion-android-search
+    URL : 
+    # title : Análise de financiamentos
+
+    description : Análise e extração de informações em contratos de financiamento de veículos.
+    
+  - types : automotivo
+    image : images/icons/32.png
+    icon : 
+    URL :
+    # title : Leitura de placas
+    description : Leitura de placas de veículos capturadas por câmeras / radares.
+
+
+  - types : automotivo
+    image : images/icons/129.png
+    icon : 
+    URL : 
+    # title : Histórico de veículos
+    description : Obtenção de histórico de veículos através da leitura automática de CRLV.
+    
+  - types : processos-judiciais
+    image : images/icons/147.png
+    icon : 
+    URL :
+    # title : Análise de processos
+    description :  Análise e extração de informações em processos judiciais.
+    
+  - types : processos-judiciais
+    image : images/icons/89.png
+    icon : 
+    URL : 
+    # title : Análise de cláusulas 
+    description : Análise e interpretação de cláusulas contratuais.
+    
+  - types : processos-judicias
+    image : images/icons/102.png
+    icon : 
+    URL : 
+    # title : Acesso em sites públicos
+    description : Obtenção de documentos e informações em sites de tribunais.
+
+    
+  - types : documentos-pessoais
+    image : images/icons/15.png
+    icon : 
+    URL : 
+    # title : Onboarding automatizado
+    description : Análise de informações em documentos pessoais (RG, CNH etc).
+    
+  - types : documentos-pessoais
+    image : images/icons/129.png
+    icon : 
+    URL : 
+    # title : Validação de identidade
+    description : Validação de documentos pessoais (RG, CNH etc) em bases oficiais.
+
+  - types : saude
+    image : images/icons/130.png
+    icon : 
+    URL : 
+    # title : Análise de guias médicas
+    description : Identificação e análise de informações em guias médicas.
+
+  - types : saude
+    image : images/icons/39.png
+    icon : 
+    URL : 
+    # title : Análises de seguros
+    description :  Análise de documentos para aprovação de contas médicas.
+        
+  - types : saude
+    image : images/portfolio/69.png
+    icon : 
+    URL : 
+    # title : Check-in automático
+    description : Leitura de documentos para check-in de pacientes.
+
+  - types : gestao-fiscal
+    image : images/portfolio/69.png
+    icon : 
+    URL : 
+    # title : Cadastro de notas fiscais
+    description : Extração de informações em notas fiscais para adicionar em sistemas/ERP.
+    
+  - types : gestao-fiscal
+    image : images/portfolio/69.png
+    icon : 
+    URL : 
+    # title : Análises de notas fiscais
+    description : Análises de informações em notas fiscais para decisões automáticas.

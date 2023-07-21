@@ -1,0 +1,171 @@
+{{ if .Site.Data.about.enable }}
+  {{ "<!-- Start About Section -->" | safeHTML }}
+  <section class="bg-one about section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          {{ "<!-- section title -->" | safeHTML }}
+          <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+            <h2>
+              {{ i18n "about-us" }}
+              <span class="color">{{ i18n "about-us-2" }}</span>
+            </h2>
+            <div class="border-meghna"></div>
+          </div>
+        </div>
+        {{ "<!-- /section title -->" | safeHTML }}
+
+        {{ "<!-- Proprietary Technology -->" | safeHTML }}
+        <div
+          class="col-lg-4 text-center wow fadeInUp members-box"
+          data-wow-duration="500ms"
+        >
+          <div class="block">
+            <div class="icon-box">
+              <!--Code copied from team to add image, need to clean up-->
+              <div class="icon-photo">
+                {{ "<!-- member photo -->" | safeHTML }}
+                <img
+                  class="img-fluid"
+                  src="{{ "images/about/Tecnologiaproprietaria.png" | absURL }}"
+                  alt="Futuro Reciclagem"
+                />
+              </div>
+            </div>
+
+            {{ "<!-- Express About Yourself -->" | safeHTML }}
+            <div class="content text-center">
+              <h3 class="ddd">{{ i18n "about-tecnology-title" }}</h3>
+              <p>{{ i18n "about-tecnology" }}</p>
+            </div>
+          </div>
+        </div>
+
+        {{ "<!-- BPM to BPD -->" | safeHTML }}
+        <div
+          class="col-lg-4 text-center wow fadeInUp members-box"
+          data-wow-duration="500ms"
+        >
+          <div class="block">
+            <div class="icon-box">
+              <!--Code copied from team to add image, need to clean up-->
+              <div class="icon-photo">
+                {{ "<!-- member photo -->" | safeHTML }}
+                <img
+                  class="img-fluid"
+                  src="{{ "images/about/BPMtoBPD.png" | absURL }}"
+                  alt="Futuro Reciclagem"
+                />
+              </div>
+            </div>
+
+            {{ "<!-- Express About Yourself -->" | safeHTML }}
+            <div class="content text-center">
+              <h3 class="ddd">{{ i18n "about-bpm-title" }}</h3>
+              <p>{{ i18n "about-bpm" }}</p>
+            </div>
+          </div>
+        </div>
+
+        {{ "<!-- Lower IT impact -->" | safeHTML }}
+        <div
+          class="col-lg-4 text-center wow fadeInUp members-box"
+          data-wow-duration="500ms"
+        >
+          <div class="block">
+            <div class="icon-box">
+              <!--Code copied from team to add image, need to clean up-->
+              <div class="icon-photo">
+                {{ "<!-- member photo -->" | safeHTML }}
+                <img
+                  class="img-fluid"
+                  src="{{ "images/about/MenorimpactoemTI.png" | absURL }}"
+                  alt="Futuro Reciclagem"
+                />
+              </div>
+            </div>
+
+            {{ "<!-- Express About Yourself -->" | safeHTML }}
+            <div class="content text-center">
+              <h3 class="ddd">{{ i18n "about-impact-title" }}</h3>
+              <p>{{ i18n "about-impact" }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /about -->" | safeHTML }}
+{{ end }}
+
+{{ if .Site.Data.about2.enable }}
+  {{ "<!-- about 2 -->" | safeHTML }}
+  <section id="infotech" class="section section-bg about-2 padding-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 padding-0 member-boxsize">
+          <img
+            class="img-fluid "
+            src="{{ .Site.Data.about2.image | absURL }}"
+            alt="image"
+          />
+        </div>
+        <div class="col-lg-8">
+          <div class="content-block">
+            <h2>{{ i18n "about2-title" }}</h2>
+            <p>{{ i18n "about2-description" }}</p>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="media">
+                  <div class="align-self-start mr-3">
+                    <i class="tf-search3"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">{{ i18n "about2-ultraocr" }}</h4>
+                    <p>{{ i18n "about2-ultraocr-description" }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="media">
+                  <div class="align-self-start mr-3">
+                    <i class="tf-ion-monitor"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">{{ i18n "about2-machine" }}</h4>
+                    <p>{{ i18n "about2-machine-description" }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="media">
+                  <div class="align-self-start mr-3">
+                    <i class="tf-adjustments"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">{{ i18n "about2-rpa" }}</h4>
+                    <p>{{ i18n "about2-rpa-description" }}</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="media">
+                  <div class="align-self-start mr-3">
+                    <i class="tf-notebook9"></i>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">
+                      {{ i18n "about2-futuro-reciclagem-core" }}
+                    </h4>
+                    <p>{{ i18n "about2-futuro-reciclagem-core-description" }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /about 2 -->" | safeHTML }}
+{{ end }}

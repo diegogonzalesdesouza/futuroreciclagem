@@ -1,0 +1,156 @@
+<!-- old portfolio -->
+{{ if .Site.Data.portfolio.enable }}
+  {{ "<!-- Portfolio Section -->" | safeHTML }}
+  <section class="portfolio section" id="portfolio">
+    <div class="container">
+      <div class="row ">
+        <div class="col-xl-12">
+          {{ "<!-- section title -->" | safeHTML }}
+          <div class="title text-center">
+            <h2>
+              {{ i18n "title-portfolio" }}
+              <span class="color">{{ i18n "title-portfolio-2" }}</span>
+            </h2>
+            <div class="border-meghna"></div>
+          </div>
+          {{ "<!-- /section title -->" | safeHTML }}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="portfolio-filter">
+            <button type="button" data-filter="all">
+              {{ i18n "portfolio-filter-all" }}
+            </button>
+            <button type="button" data-filter="portfolio-filter-automotive">
+              {{ i18n "portfolio-filter-automotive" }}
+            </button>
+            <button type="button" data-filter="portfolio-filter-lawsuits">
+              {{ i18n "portfolio-filter-lawsuits" }}
+            </button>
+            <button type="button" data-filter="portfolio-filter-personal">
+              {{ i18n "portfolio-filter-personal" }}
+            </button>
+            <button type="button" data-filter="portfolio-filter-health">
+              {{ i18n "portfolio-filter-health" }}
+            </button>
+            <button type="button" data-filter="portfolio-filter-tax">
+              {{ i18n "portfolio-filter-tax" }}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row filtr-container content-center">
+        {{ "<!-- portfolio item -->" | safeHTML }}
+        <div
+          class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+          data-category="portfolio-filter-automotive">
+          <div class="portfolio-content text-center text-portfolio">
+            {{ i18n "portfolio-item-1" }}
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+          data-category="portfolio-filter-automotive"
+        >
+          <div class="portfolio-content text-center text-portfolio">
+            {{ i18n "portfolio-item-2" }}
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+          data-category="portfolio-filter-automotive">
+          <div class="portfolio-content text-center text-portfolio">
+            {{ i18n "portfolio-item-3" }}
+          </div>
+        </div>
+
+        <div
+          class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+          data-category="portfolio-filter-lawsuits">
+          <div class="portfolio-content text-center text-portfolio">
+            {{ i18n "portfolio-item-4" }}
+          </div>
+        </div>
+
+        <div
+        class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+        data-category="portfolio-filter-lawsuits">
+          <div class="portfolio-content text-center text-portfolio">
+            {{ i18n "portfolio-item-5" }}
+          </div>
+        </div>
+
+
+        <div
+        class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+        data-category="portfolio-filter-lawsuits">
+        <div class="portfolio-content text-center text-portfolio">
+          {{ i18n "portfolio-item-6" }}
+        </div>
+      </div>
+
+      <div
+      class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+      data-category="portfolio-filter-personal">
+      <div class="portfolio-content text-center text-portfolio">
+        {{ i18n "portfolio-item-7" }}
+      </div>
+    </div>
+
+    <div
+    class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+    data-category="portfolio-filter-personal">
+    <div class="portfolio-content text-center text-portfolio">
+      {{ i18n "portfolio-item-8" }}
+    </div>
+  </div>
+
+  <div
+  class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+  data-category="portfolio-filter-health">
+  <div class="portfolio-content text-center text-portfolio">
+    {{ i18n "portfolio-item-9" }}
+  </div>
+</div>
+
+<div
+class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+data-category="portfolio-filter-health">
+<div class="portfolio-content text-center text-portfolio">
+  {{ i18n "portfolio-item-10" }}
+</div>
+</div>
+
+<div
+class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+data-category="portfolio-filter-health">
+<div class="portfolio-content text-center text-portfolio">
+  {{ i18n "portfolio-item-11" }}
+</div>
+</div>
+
+<div
+class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+data-category="portfolio-filter-tax">
+<div class="portfolio-content text-center text-portfolio">
+  {{ i18n "portfolio-item-12" }}
+</div>
+</div>
+
+<div
+class="col-lg-3 col-md-4 col-sm-6 filtr-item"
+data-category="portfolio-filter-tax">
+<div class="portfolio-content text-center text-portfolio">
+  {{ i18n "portfolio-item-13" }}
+</div>
+</div>
+
+
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,23 @@
+enable : true
+image : images/backgrounds/setas_1.webp
+title : Um pouco da tecnologia de ponta da Futuro Reciclagem.
+description : Automatizamos as decisões que devem ser tomadas na sua empresa.
+aboutItem : 
+ 
+  - icon : tf-search3
+    title : Ultra OCR®
+    content : O Ultra OCR®, patenteado pela Futuro Reciclagem, é o sistema de reconhecimento de caracteres, palavras ou termos em imagens ou PDFs. Os sofisticados algoritmos de tratamento de imagem garantem uma eficácia de reconhecimento muito maior que a média de mercado.
+
+  - icon : tf-ion-monitor
+    title : Machine Learning & NLP
+    content : O Machine Learning (ML) e o Natural Language Processing (NLP) são as tecnologias para aprendizado, interpretação e tomada de decisão através de documentos. Quanto maior o número de informações processados, maior é a acuracidade do sistema. 
+
+  - icon : tf-adjustments
+    title : RPA
+    content : O Robotic Process Automation (RPA) é o componente responsável por automatizar busca e validação de informações, estejam elas em sites, bases de dados ou sistemas internos do negócio. Esse mesmo RPA insere o resultado das análises nos sistemas da empresa.
+
+  - icon : tf-notebook9
+    title : Futuro Reciclagem Core
+    content : O Futuro Reciclagem Core é uma arquitetura de processamento paralelo em cloud extremamente escalável e elástica. A infraestrutura da Futuro Reciclagem se adapta ao volume de transações que devem ser processados, redimensionando o número de CPUs conforme demanda.
+    
+  

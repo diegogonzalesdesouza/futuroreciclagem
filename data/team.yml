@@ -1,0 +1,19 @@
+enable : true
+heading : Nossa
+headingSpan : Equipe
+teamMember :
+  - image : images/team/DiegoGonzales.webp
+    name : Diego Gonzales
+    designation : CEO/Founder
+    description : Executivo e empreendedor com experiência em Desenvolvimento de negócios, Vendas, Marketing, Marketing Digital, Operações, Tecnologia da informação e Gestão Financeira. Significante experiência internacional, tendo performado cargos executivos de vendas e marketing na América Latina por dois anos.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/diegogonzalesdesouza/"
+
+  - image : images/team/DiegoGonzales.webp
+    name : Diego Gonzales
+    designation : CFO
+    description : Formado em Engenharia de Produção pela Universidade Federal de Sâo Carlos e com especialização pela Columbia University, com mais de cinco anos no mercado de serviços financeiros e de locação estratégicas de investimentos nacionais e internacionais, desenvolvendo fortes habilidades em venture capital. Desenvolve hoje na Nuveo o papel de estrategista de desenvolvimento, gestão de caixa e facilitador de negócios.
+    socialIcon :
+      - icon : tf-ion-social-linkedin
+        url : "https://www.linkedin.com/in/diegogonzalesdesouza/"
