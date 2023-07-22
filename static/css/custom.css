@@ -67,6 +67,10 @@
     } 
 }
 
+#temporary-logo {
+    width: 250px;
+}
+
 .center-screen {
   display: flex;
   justify-content: center;
