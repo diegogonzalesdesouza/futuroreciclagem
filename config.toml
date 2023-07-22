@@ -60,7 +60,7 @@ summaryLength = 10
     logo = "images/logo.png"
     gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
     # Meta data
-    description = "Inteligência artificial ao seu alcance"
+    description = "Sua sustentabilidade é o nosso negócio"
     author = "Themefisher"
     # Google Analitycs
     googleAnalitycsID = "Your ID"
@@ -161,7 +161,7 @@ summaryLength = 10
     logo = "images/logo.png"
     gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
     # Meta data
-    description = "Inteligência artificial ao seu alcance"
+    description = "Sua sustentabilidade é o nosso negócio"
     author = "Themefisher"
     # Google Analitycs
     googleAnalitycsID = "Your ID"
